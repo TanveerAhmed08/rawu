@@ -1,0 +1,53 @@
+.main-header {
+  width: 100vw;
+  height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
+}
+
+.main-header-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.main-header-left {
+  margin-top: -3rem;
+}
+
+.main-header-left h4 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+
+.main-header-left p {
+  margin: 1rem 0 3.5rem;
+  font-size: 1.1rem;
+  color: var(--color-gray-100);
+}
+
+.main-header-right {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.main-header-circle {
+  width: 25rem;
+  height: 25rem;
+  background: linear-gradient(75deg, var(--secondary-color), transparent);
+  border-radius: 50%;
+  position: absolute;
+  transition: var(--transition);
+}
+
+.main-header-image {
+  position: relative;
+}
+.main-header:hover .main-header-circle {
+  filter: blur(20px);
+}
