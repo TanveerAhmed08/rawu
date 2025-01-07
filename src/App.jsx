@@ -8,6 +8,7 @@ import Plans from "./pages/plans/Plans";
 import Trainers from "./pages/trainers/Trainers";
 import Notfound from "./pages/notFound/Notfound";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -20,8 +21,9 @@ const App = () => {
         <Route path="gallery" element={<Gallery />} />
         <Route path="plans" element={<Plans />} />
         <Route path="trainers" element={<Trainers />} />
-        <Route path="*" element={<undefined />} />
+        <Route path="*" element={<Notfound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

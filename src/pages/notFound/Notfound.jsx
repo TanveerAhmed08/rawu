@@ -1,11 +1,17 @@
 import React from 'react'
 import './notfound.css'
+import { Link } from 'react-router-dom'
 
 const Notfound = () => {
   return (
-    <div>
-      Notfound
-    </div>
+    <>
+    <section>
+      <div className="contaiber notfound-container">
+        <h2>Page Not Found</h2>
+        <Link to='/' className='btn'>Go Back Home</Link>
+      </div>
+    </section>
+    </>
   )
 }
 
